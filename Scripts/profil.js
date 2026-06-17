@@ -39,10 +39,6 @@ if (indexActif !== -1) { // pour charger les données a l'arrivée
     else {
         descdesc.value = m.desc;
     }
-    const savedImage = localStorage.getItem(m.pseudo);
-    if (savedImage) {
-        pdp.src = savedImage; // Display the saved image
-    }
 }
 
 // Fonction qui permet de charger les posts
