@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Connexion</title>
+        <link rel="stylesheet" href="../Style/connexion.css">
+    </head>
+    <body>
+        <div id="Choix">
+            <h1> Connexion à la crypte </h1>
+            
+            <form id="form-etudiant">
+            <div class="champ">
+                <label for="Sobriquet">Sobriquet (Pseudonyme)</label>
+                <input id="Sobriquet" type="text" placeholder="Ex : GobelinFarceur_1195">
+            </div>
+            <div class="champ">
+                <label for="mdp">Code secret</label>
+                <input id="mdp" type="password">
+            </div>
+
+            <div class="container">
+                <button id="entrer" type="submit">Rentrer dans la crypte ! </button>
+            </div>
+            <label id="verif_info"></label>
+            <div class="container">
+                <p id="retour"> Pas encore membre ?  </p> <a href="../Pages/inscription.html"> Adhérer à la crypte </a> 
+            </div>
+        </form>
+        </div>
+        <button onclick="window.location.href='../index.html'"> Retour </button>
+    </body>
+    <script src="../Scripts/connexion.js"></script>
+</html>

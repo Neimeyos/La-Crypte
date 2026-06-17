@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Dumbledor; 
+    src: url("../Font/Dumbledor/dum1/dum1.ttf")
+  }
+  
+#Choix {
+    border-radius: 8px;
+    margin : 15px;
+    height: 550px;
+    width: 950px;
+    background-image: url("../Images/fondacceuil/abab.png");
+}
+
+#Connexion {
+    opacity: 0;
+    position: absolute;
+    margin-top: 150px;
+    left: 575px;
+    height: 500px;
+    width: 225px;
+    background-color: blue;
+    border: none; 
+    border-radius: 13px;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+#Connexion:hover {
+    background-color: rgb(50, 60, 160);
+}
+
+#Inscription {
+    opacity: 0;
+    position: absolute;
+    margin-top: 150px;
+    right: 550px;
+    height: 500px;
+    width: 225px;
+    background-color: aqua;
+    border: none;
+    border-radius: 13px;
+    padding-right: auto;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+#Inscription:hover {
+    background-color: rgb(170, 250, 250);  
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1000px;
+    margin: 30px auto;
+    height: 950px;
+    background-image: url("../Images/fondacceuil/fond.png");
+    }
+
+#question {
+    font-size: 16px;
+    text-indent: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    display: block;  
+    margin: 0 auto;  
+    image-rendering: pixelated;
+    width: 500px;
+}

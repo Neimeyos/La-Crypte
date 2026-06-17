@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscription</title>
+        <link rel="stylesheet" href="../Style/inscription.css">
+    </head>
+    <body>
+        <div id="Choix">
+            <h1> Adhésion à la crypte</h1>
+            <form id="form-etudiant", >
+            <div class="champ">
+                <label for="Sobriquet" required>Sobriquet (Pseudonyme)</label>
+                <input id="Sobriquet" type="text" placeholder="Ex : GobelinFarceur_1195">
+            </div>
+            <div class="champ">
+                <label for="Email" required>Email</label>
+                <input id="Email" type="email" placeholder="Ex : GoblinFarceur_1195@gmail.com">
+            </div>
+            <div class="champ">
+                <label for="mdp" required>Code secret</label>
+                <label id="verif_mdp_cache2"></label>
+                <input id="mdp" type="password" oninput="mdpconforme()">
+            </div>
+
+            <div class="champ">
+                <label for="mdp_confirm" required>Confirmation code secret</label>
+                <label id="verif_mdp_cache"></label>
+                <input id="mdp_confirm" type="password" oninput="verif()">
+            </div>
+
+            <div class="container">
+                <button id="entrer" type="submit" >Rentrer dans la crypte ! </button>
+            </div>
+            <label id="verif_info"></label>
+            <div class="container">
+                <p id="retour"> Déja membre de la crypte ?  </p> <a href="../Pages/connexion.html"> Se connecter </a> 
+            </div>
+        </form>
+        </div>
+        <button onclick="window.location.href='../index.html'"> Retour </button>
+    </body>
+    <script src="../Scripts/inscription.js"></script>
+</html>

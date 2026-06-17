@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Dumbledor; 
+    src: url("../Font/Dumbledor/dum1/dum1.ttf")
+  }
+  
+#Choix {
+    border: 1px solid #ddd;
+    padding: 14px;
+    border-radius: 8px;
+    margin : auto;
+    margin-top: 50px;
+    width: 500px;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    background-image : url("../Images/fondconnectincr/connex.png");  
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.champ {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+.champz {
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+}
+
+    input, select, button {
+    font-size: 16px;
+    padding: 8px;
+    }
+
+h1, h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#entrer {
+    border: 2px solid rgb(95 97 110);
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    gap: 5px;
+    justify-content: center; 
+    align-items: center;
+}
+
+#retour {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#verif_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    background-image: url("../Images/eeee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}

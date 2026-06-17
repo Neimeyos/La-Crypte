@@ -1,0 +1,199 @@
+@font-face {
+    font-family: Dumbledor; 
+    src: url("../Font/Dumbledor/dum1/dum1.ttf")
+  }
+
+  h1 {
+    color: white;
+  }
+
+body {
+    font-family: Dumbledor;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Images/eeee.png");
+    background-size: cover;
+
+}
+header {
+    padding: 1rem;
+    text-align: center;
+}
+.feed {
+    max-width: 800px;
+    margin: auto;
+    background-image: url("../Images/eeee.png");
+    padding: 1rem;
+} 
+.post {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding: 16px;
+    box-shadow: 0 2px 5px blue;
+}
+
+.pub {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    height: 500px;
+    padding: 16px;
+    box-shadow: 0 2px 5px blue;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.pdp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.btnclass {
+    font-family: Dumbledor;
+    font-size: 20px;
+}
+
+.username {
+    font-weight: bold;
+    font-family: Dumbledor;
+    font-size: 25px;
+}
+
+.timestamp {
+    color: gray;
+    font-size: 0.85rem;
+}
+.post-content {
+    margin: 0.5rem 0;
+}
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.post {
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    background-image: url("../images/fondpost2.png");
+    font-family: Dumbledor;
+    font-size: 22px;
+}
+
+.detext {
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    background-image: url("../images/backtest.png");
+    color: white;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.detext img {
+    margin: 0px;
+}
+
+.detext p {
+    margin: 5px;
+}
+  
+  .column {
+    background-color: #f4f4f4;
+    position: relative;
+    float: left;
+    background-image: url("../Images/eeee.png")
+  }
+  
+  .row{
+    padding-left: 24em;
+    padding-right: 24em;
+    
+}
+
+.mid{
+    width: 100%;
+}
+
+.right{
+    position: absolute;
+    right: 20px;
+    top: 150px;
+
+    width: 18em;
+}
+  
+  .left {
+    position: fixed;
+    left: 30px;
+    top: 150px;
+    width: 18em;
+    padding: 1em;
+    border-radius: 20px;
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+    background-image: url("../Images/la colonne profil.png");
+    background-color: #f4f4f4;
+}
+
+
+  .pdpProfil {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  #imgprofil {
+    font-family: Dumbledor;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: left;
+  }
+
+  #btnporfil {
+    background-color: red;
+    border: 1px solid white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #btnporfil:hover {
+    background-color: rgba(255, 123, 0, 0.993);
+    transform: scale(1.05);
+    }
+
+  #btnprofil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  #btnAnnonce {
+    font-family: Dumbledor;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  #btnDeco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 50px;
+  }

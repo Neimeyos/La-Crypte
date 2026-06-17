@@ -1,0 +1,229 @@
+
+@font-face {
+    font-family: Dumbledor; 
+    src: url("../Font/Dumbledor/dum1/dum1.ttf")
+  }
+  #ahah {
+    font-family: Dumbledor;
+    width: 1100px;
+    height: 700px;
+    margin: 80px auto 0;  /* ← auto gauche/droite = centré */
+    background-image: url("../Images/fondprofil/byeob.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: visible;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Choix {
+    font-family: Dumbledor;
+    padding: 14px;
+    border-radius: 8px;
+    width: 1000px;
+    height: 525px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#photo {
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    left: 25px;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 6%;
+}
+
+#btninput {
+    font-family: Dumbledor;
+    position: absolute;
+    right: 0px;
+    bottom: 45px;
+    height: 62px;
+    width: 130px;
+    background: transparent;
+    color: transparent;
+    border: none;
+    /* background-image: url("../Images/tempo.webp"); */
+}
+
+#random {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    height: 62px;
+    width: 130px;
+    background: transparent;
+    color: transparent;
+    border: none;
+}
+
+#bio {
+    font-family: Dumbledor;
+    font-size: 10px;
+    position: absolute;
+    top: 260px;
+    left: 25px;
+}
+
+#story {
+    font-family: Dumbledor;
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 300px;
+    resize: none;
+}
+
+#Sobriquet { 
+    font-family: Dumbledor;
+    font-size: 20px;
+    position: absolute; 
+    top: 40px; 
+    right: 150px; 
+}
+
+#Email      { 
+    font-family: Dumbledor;
+    font-size: 20px;
+    position: absolute; 
+    top: 70px; 
+    right: 150px; 
+}
+
+#mdp        { 
+    font-size: 20px;
+    font-family: Dumbledor;
+    position: absolute; 
+    top: 100px; 
+    right: 150px; 
+}
+
+#modif {
+    font-size: 20px;
+    font-family: Dumbledor;
+    position: absolute; 
+    top: 100px; 
+    right: 75px;
+}
+
+#mdp_nv {
+    font-size: 20px;
+    font-family: Dumbledor;
+    position: absolute; 
+    top: 130px; 
+    right: 150px; 
+}
+
+#mdpconfirm{
+    font-size: 20px;
+    font-family: Dumbledor;
+        position: absolute; 
+        top: 130px; 
+        right: 70px;    
+}
+
+#quitt {
+    font-size: 20px;
+    font-family: Dumbledor;
+    position: absolute;
+    background: transparent;
+    color: transparent;
+    border: none;
+    top: 525px;
+    left: 20px;
+    height: 62px;
+    width: 90px;
+}
+
+#quitter {
+    font-size: 20px;
+    font-family: Dumbledor;
+    position: absolute;
+    background: transparent;
+    color: transparent;
+    border: none;
+    height: 62px;
+    width: 90px;
+}
+
+#donnees {
+    font-size: 20px;
+    font-family: Dumbledor;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    position: absolute;
+    width: 450px;
+    height: 175px;
+    top: 190px;
+    right: 75px;  
+}
+
+h1 {
+    font-family: Dumbledor;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.libelle_rune{
+    font-family: Dumbledor;
+    font-size: 20px;
+    visibility: hidden;
+} 
+
+.rune_stat {
+    font-family: Dumbledor;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 14px 14px;
+    border-radius: 8px;
+}
+
+#sauvegarder {
+    font-family: Dumbledor;
+    font-size: 20px;
+    position: absolute;
+    bottom: 157px;
+    right: 100px;
+}
+
+#supprimer {
+    font-family: Dumbledor;
+    font-size: 20px;
+    position: absolute;
+    bottom: 157px;
+    right: 50vh;
+}
+
+body {
+    background-image: url("../Images/eeee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100% 100%;
+}
+
+html, body {
+    height: 100%;
+}

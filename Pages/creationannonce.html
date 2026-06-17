@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La crypte</title>
+        <link rel="stylesheet" href="../Style/creationannonce.css">
+    </head>
+    <header class="header">
+        <div class="inner">
+            <h1 class="subtitle">Nouvelle annonce</h1>
+        </div>
+    </header>
+<body>
+    <div id="grand">
+        <div id="post">
+            <div class="textconteneur">
+                <textarea id="textepost" placeholder="Partagez vos pensées avec les confrères…" maxlength="1500"></textarea>
+                <div class="characcompt">
+                    <label id="characcomptlabel">0</label>/150
+                </div>
+            </div>
+            <div id="zoneImage">
+                <h3>Ajouter une image</h3>
+                <input type="file" id="imagePost" accept="image/png,image/jpeg,image/jpg">
+                <p id="nomFichier"> Aucun fichier sélectionné </p>
+                <img id="previewImage" style="display:none;max-width:300px;max-height:300px;border-radius:10px;">
+            </div>
+        </div>
+
+        <label id="petittextediscret"></label>
+
+        <div class="boutons">
+            <button onclick="window.location.href='page_principale.html'"> Abandonner </button>
+            <button id="btnpost"> Poster l'annonce </button>
+        </div>
+    </div>
+
+</body>
+    <script src="../Scripts/creationannonce.js"></script>
+</html>

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Dumbledor; 
+    src: url("../Font/Dumbledor/dum1/dum1.ttf")
+  }
+
+body
+{
+    margin: 20px;
+    font-family: Dumbledor;
+}
+
+#photoProfil
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-family: Dumbledor;
+}
+
+#descProfil {
+  color: white;
+}
+
+.post
+{
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-family: Dumbledor;
+}
+
+#retour
+{
+    background-color: red;
+    border: 1px solid white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+#retour:hover {
+    background-color: rgba(255, 123, 0, 0.993);
+    transform: scale(1.05);
+    }
+
+.profilHeader {
+    font-family: Dumbledor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pdpProfil {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  #imgprofil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: left;
+  }
+
+  #btnporfil {
+    background-color: red;
+    border: 1px solid white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #btnporfil:hover {
+    background-color: rgba(255, 123, 0, 0.993);
+    transform: scale(1.05);
+    }
+
+  #btnprofil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  #btnAnnonce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-top: 50px;
+  }
+
+  .Profil {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  #btnDeco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-top: 50px;
+  }
