@@ -76,16 +76,11 @@ function afficherEtudiants() {
 btn_profil.addEventListener("click",  function (event) { // photo de profil random
 
     nombre = "../Images/pdp/g";
-
     min = Math.ceil(1);
     max = Math.ceil(10);
-
     random = Math.floor(Math.random() * (max - min) + min);
-
     nombre += random;
-
     nombre += ".png";
-
     blabl = "../Images/pdp/g5.png";
 
     pdp.src = nombre;
@@ -123,12 +118,16 @@ buttonfile.onclick = () => {
 // permet de charger une image personnalisé qu'on converti en base64
 fileInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
+
     if (file) {
         const reader = new FileReader();
+
         reader.onload = () => {
-            localStorage.setItem(membre[indexActif].pseudo, reader.result);
+            membre[indexActif].path = reader.result;
+            sauvegarderMembre();
             pdp.src = reader.result;
         };
+
         reader.readAsDataURL(file);
     }
 });
