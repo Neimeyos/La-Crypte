@@ -29,10 +29,7 @@ function chargerPost(){
         postsjson = JSON.parse(data);
 }}
 
-let postsjson = [];
-
-chargerEtudiants();
-
+let postsjson = JSON.parse(localStorage.getItem("post") || "[]");
 chargerPost();
 
 // permet de rajouter une id si les posts n'en ont pas
@@ -41,24 +38,21 @@ for (let i = 0; i < postsjson.length; i++) {
             postsjson[i].id = Date.now() + i;
         }
 }
-    
- sauvegarderPost();
 
 // on récupere des petites choses utiles et interessantes
+let membre = JSON.parse(localStorage.getItem("membre") || "[]");
+chargerEtudiants();
+
 const pseudoActif = sessionStorage.getItem("membreActif");
 const indexActif = membre.findIndex(m => m.pseudo === pseudoActif);
-const savedImage = membre[indexActif]?.path;
-const champPseudo = document.getElementById("recherchePseudo");
-const champPost = document.getElementById("recherchePost");
-const btnRecherche = document.getElementById("btnRecherche");
+ sauvegarderPost();
 
 // ici on reucpere la photo de profil de la personne active
 const img = document.getElementById("photoProfil");
-img.src = membre[indexActif].path;
-
-if (savedImage) {
-    img.src = savedImage;
+if (indexActif !== -1) {
+    img.src = membre[indexActif]?.path || "../Images/pdp/g10.png";
 }
+
 
 // fonction qui permet d'afficher le feed en montrant tout les posts
 function afficherPost(filtrePseudo = "", filtrePost = "") {
@@ -95,9 +89,10 @@ function afficherPost(filtrePseudo = "", filtrePost = "") {
         // Si c'est notre propre publication, on utilise notre photo de profil
         if (postData.pseudo == pseudoActif){
             img.src = membre[indexActif].path;
-        } else {
-            const user = membre.find(m => m.pseudo === postData.pseudo);
-            img.src = user?.path || "../Images/pdp/g2.png";
+        } 
+        else {
+            // Image classique (URL)
+            img.src = postData.path;
         }
         img.classList.add("pdp");
 
