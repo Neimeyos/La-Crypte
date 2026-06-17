@@ -109,11 +109,7 @@ mettreAJourBoutonAbonnement();
 if (membreVisite) {
     document.getElementById("pseudoProfil").textContent = membreVisite.pseudo;
     document.getElementById("descProfil").textContent = membreVisite.desc;
-    const imgProfil = document.getElementById("photoProfil");
-
-    if (membreVisite && membreVisite.path) {
-        imgProfil.src = membreVisite.path;
-    }
+    document.getElementById("photoProfil").src = membreVisite.path;
 }
 
 // On récupère le conteneur qui va accueillir les publications du profil visité
@@ -136,14 +132,16 @@ for (let i = 0; i < postsjson.length; i++)
     const container = document.createElement("div");
     container.classList.add("post");
 
-    
     detext.style.backgroundImage = `url("../Images/backtest.png")`;
     container.style.backgroundImage = `url("../Images/fondpost2.png")`;
 
     const img = document.createElement("img");
-    img.src = membre[indexActif]?.path || "../Images/pdp/g2.png";
-    img.classList.add("pdp");
 
+    const user = membre.find(m => m.pseudo === postData.pseudo);
+
+    img.src = user?.path || "../Images/pdp/g10.png";
+    img.classList.add("pdp");
+    
     // ici on va creer la photo de profil, le texte de la publication, le pseudo, le bouton like 
     const nouveauParagraphe = document.createElement("p");
     nouveauParagraphe.textContent = postData.post;
