@@ -132,6 +132,10 @@ for (let i = 0; i < postsjson.length; i++)
     const container = document.createElement("div");
     container.classList.add("post");
 
+    
+    detext.style.backgroundImage = `url("../Images/backtest.png")`;
+    container.style.backgroundImage = `url("../Images/fondpost2.png")`;
+
     const img = document.createElement("img");
     img.src = postData.path;
     img.classList.add("pdp");
