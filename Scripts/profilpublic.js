@@ -141,7 +141,7 @@ for (let i = 0; i < postsjson.length; i++)
     container.style.backgroundImage = `url("../Images/fondpost2.png")`;
 
     const img = document.createElement("img");
-    img.src = membre.find(m => m.pseudo === postData.pseudo)?.path || postData.path;
+    img.src = membre[indexActif]?.path || "../Images/pdp/g2.png";
     img.classList.add("pdp");
 
     // ici on va creer la photo de profil, le texte de la publication, le pseudo, le bouton like 
