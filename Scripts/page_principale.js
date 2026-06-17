@@ -32,6 +32,9 @@ function chargerPost(){
 let postsjson = [];
 
 chargerEtudiants();
+
+const savedImage = membre[indexActif]?.path;
+
 chargerPost();
 
 // permet de rajouter une id si les posts n'en ont pas
@@ -53,6 +56,11 @@ const btnRecherche = document.getElementById("btnRecherche");
 // ici on reucpere la photo de profil de la personne active
 const img = document.getElementById("photoProfil");
 img.src = membre[indexActif].path;
+
+if (savedImage) {
+    const img = document.getElementById("photoProfil");
+    img.src = savedImage;
+}
 
 // fonction qui permet d'afficher le feed en montrant tout les posts
 function afficherPost(filtrePseudo = "", filtrePost = "") {
