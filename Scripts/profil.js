@@ -39,6 +39,10 @@ if (indexActif !== -1) { // pour charger les données a l'arrivée
     else {
         descdesc.value = m.desc;
     }
+    const savedImage = localStorage.getItem(m.pseudo);
+    if (savedImage) {
+        pdp.src = savedImage; // Display the saved image
+    }
 }
 
 // Fonction qui permet de charger les posts
@@ -72,11 +76,16 @@ function afficherEtudiants() {
 btn_profil.addEventListener("click",  function (event) { // photo de profil random
 
     nombre = "../Images/pdp/g";
+
     min = Math.ceil(1);
     max = Math.ceil(10);
+
     random = Math.floor(Math.random() * (max - min) + min);
+
     nombre += random;
+
     nombre += ".png";
+
     blabl = "../Images/pdp/g5.png";
 
     pdp.src = nombre;
@@ -114,18 +123,17 @@ buttonfile.onclick = () => {
 // permet de charger une image personnalisé qu'on converti en base64
 fileInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
+    if (!file || indexActif === -1) return;
+    const reader = new FileReader();
 
-    if (file) {
-        const reader = new FileReader();
+    reader.onload = () => {
+        membre[indexActif].path = reader.result;
+        localStorage.setItem("membre", JSON.stringify(membre));
+        const pdp = document.getElementById("pdp");
+        if (pdp) pdp.src = reader.result;
+    };
 
-        reader.onload = () => {
-            membre[indexActif].path = reader.result;
-            sauvegarderMembre();
-            pdp.src = reader.result;
-        };
-
-        reader.readAsDataURL(file);
-    }
+    reader.readAsDataURL(file);
 });
 
 // Permet d'activer ou désactiver la modification du mot de passe
